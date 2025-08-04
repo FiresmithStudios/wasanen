@@ -160,13 +160,15 @@
     }
 
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
       gap: 1.5rem;
+      width: 95vw;
+
     }
 
     .gallery img {
-      width: 100%;
+      width: 25vw;
       border-radius: 12px;
       object-fit: cover;
       border: 2px solid var(--light-gray);
@@ -259,6 +261,13 @@
       box-shadow: 0 0 15px var(--gold);
     }
 
+    .gallery img {
+      width: 25vw;
+      min-width: 250px;
+      max-width: 450px;
+      height: auto;
+    }
+
 
     @media (max-width: 480px) {
       header h1 {
@@ -334,7 +343,7 @@
 
   <nav>
     <a href="#services">Palvelut</a>
-    <!--<a href="#gallery">Gallery</a>-->
+    <a href="#gallery">Töitäni</a>
     <a href="#contact">Ota yhteyttä</a>
   </nav>
 
@@ -375,14 +384,13 @@
   
   
 
-<!-- <section class="section" id="gallery">
-    <h3>Some work that I can do</h3>
+ <section class="section" id="gallery">
+    <h3>Tässä työnjälkeä!</h3>
+    <h4>Ja lisäähän löydät mun <a href="https://instagram.com/wasanen.store" target="_blank">instagramista</a></h4>
     <div class="gallery">
-      <img src="https://source.unsplash.com/400x400/?engraving,wood" alt="Wood engraving" />
-      <img src="https://source.unsplash.com/400x400/?laser,design" alt="Laser design" />
-      <img src="https://source.unsplash.com/400x400/?finnish,craft" alt="Craft work" />
+      <img src="cboard1.jpg" alt="Cutting board wood engraving" />
     </div>
-  </section>--> 
+  </section>
 
   <section class="section" id="contact" style="max-width: 100vw;">
     <h3>Ota yhteyttä</h3>
