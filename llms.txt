@@ -1,8 +1,8 @@
 # Wäsänen
 
-> Junnuyrittäjän puupaja Nurmijärveltä. Yksilöllisiä puutöitä, kaiverruksia ja lahjoja käsityönä – ei massatuotantoa, vaan jokainen kappale tehdään tilauksesta.
+> Digitaaliset ratkaisut Nurmijärveltä. Ongelma jaetaan pieniin osiin ja rakennetaan räätälöity työkalu – verkkosivuista IoT:hen ja analytiikkaan.
 
-Wäsänen on opiskelijan ja junnuyrittäjän pieni käsityöyritys Uudellamaalla. Painopiste on suomalaisessa puussa: leikkuulaudat, kyltit, taulut, koristeet ja yksilölliset lahjat. Kaiverrukset (teksti, nimi, logo) voidaan tehdä puuhun ja tarvittaessa myös muihin materiaaleihin.
+Wäsänen auttaa yrityksiä ja yksityisiä asiakkaita, kun data puuttuu, prosessit ovat kökköjä tai järjestelmät eivät toimi yhdessä. Ratkaisut voivat olla esim. ravintolan kävijädata, inventaario, kellotus, Raspberry Pi / ESP -laitteet, verkkosivut, hallintapaneelit tai pilvipohjaiset yhteistyöjärjestelmät – ja käytännössä mitä tahansa vastaavaa.
 
 ## Yhteystiedot
 
@@ -12,36 +12,36 @@ Wäsänen on opiskelijan ja junnuyrittäjän pieni käsityöyritys Uudellamaalla
 - Sijainti: Nurmijärvi, Uusimaa, Suomi
 - Vastausaika: yleensä saman päivän aikana
 
-## Palvelut
+## Prosessi
 
-- Puutyöt: leikkuulaudat, kyltit, taulut, koristeet ja pienesineet kotimaisesta puusta
-- Kaiverrukset: oma teksti, nimi, päivämäärä, logo tai kuva puuhun (myös nahka, akryyli, paperi pyynnöstä)
-- Yksilölliset lahjat: häät, syntymäpäivät, valmistujaiset – suunnitellaan yhdessä asiakkaan toiveiden mukaan
+1. Yhteydenotto lomakkeella tai sähköpostilla
+2. Kartoitus (puhelu, video, viestit tai paikan päällä)
+3. Ensimmäinen ilmainen demo + briiffi
+4. Toinen demo; esitys kasvotusten tai videolla
+5. Tarjous sähköpostiin (tähän asti ilmaista)
+6. Käyttöönotto: ilmainen asennus; laitteet laskutetaan ostohinnalla
+7. Kiinteä kuukausimaksu työkalusta (arvioidaan tarjouksessa)
 
-## Hinnoittelu (suuntaa-antava)
+## Hinnoittelu
 
-- Pienet puutyöt (avaimenperät, nimikyltit): noin 0,25–5 € / kpl
-- Keskikokoiset puutyöt (kyltit, taulut, leikkuulaudat): noin 5–30 € / kpl
-- Isot erityistilaukset: noin 20–100 €+ / kpl
-- Kaiverrukset erikoispintoihin: alkaen 15 € / kpl
-- Tarkka hinta sovitaan aina erikseen; toimituskulut lisätään erikseen
+- Suunnittelu, demot ja tarjous: 0 €
+- Laitteistot (Pi, ESP, palvelin, näytöt…): ostohinta, läpinäkyvä erittely
+- Asennus: ilmainen työ; matkakulut erikseen
+- Kuukausimaksu: kiinteä, arvio tarjouksessa, edullinen
 
-## Tilausprosessi
+## Sivutoimi: laser & puutyöt
 
-1. Yhteydenotto sähköpostilla tai sivun lomakkeella
-2. Suunnittelu yhdessä (idea, materiaali, mitat)
-3. Valmistus pajalla, viimeistely käsityönä
-4. Nouto Nurmijärveltä tai postitus
+- https://wasanen.store/laser/ – puutyöt, laserkaiverrus, lahjat
 
 ## Avainsanat
 
-puutyöt, käsityö, laserkaiverrus, leikkuulauta, kyltti, lahja, personointi, Nurmijärvi, Uusimaa, Suomi, junnuyrittäjä, Wäsänen
+digitaaliset ratkaisut, verkkosivut, analytiikka, IoT, työkalut, pilvi, inventaario, Nurmijärvi, Wäsänen, Raspberry Pi, automaatio
 
 ## Sivun osiot
 
-- #about – tarina ja kuka tekee työt
-- #services – palvelut
-- #gallery – esimerkkikuvia töistä
-- #process – miten tilaus etenee
-- #pricing – hinnoittelu
-- #contact – yhteydenotto ja tarjouspyyntö
+- #about – mitä teen
+- #solutions – esimerkkiratkaisut
+- #process – 7 vaiheen prosessi
+- #pricing – hinnoitteluperiaate
+- #laser – linkki puu/laser-palveluun
+- #contact – yhteydenotto

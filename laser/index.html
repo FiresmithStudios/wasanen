@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0a0f18" />
-  <meta name="description" content="Wäsänen – räätälöidyt digitaaliset työkalut, verkkosivut, analytiikka ja IoT-ratkaisut Nurmijärveltä. Ilmainen suunnittelu ja demot ennen tarjousta." />
-  <meta name="keywords" content="digitaaliset ratkaisut, verkkosivut, analytiikka, IoT, työkalut, Nurmijärvi, Wäsänen, Raspberry Pi, pilvi, inventaario" />
-  <meta property="og:title" content="Wäsänen – Digitaaliset ratkaisut" />
-  <meta property="og:description" content="Ongelma pieniin osiin. Ratkaisu digitaalisesti – verkkosivut, työkalut, analytiikka ja älylaitteet Nurmijärveltä." />
+  <meta name="theme-color" content="#0e1410" />
+  <meta name="description" content="Wäsänen – nurmijärveläisen junnuyrittäjän puupaja. Yksilöllisiä puutöitä, kaiverruksia ja lahjoja käsityönä." />
+  <meta name="keywords" content="puutyöt, laserkaiverrus, käsityö, leikkuulauta, Nurmijärvi, Wäsänen, lahjat, junnuyrittäjä" />
+  <meta property="og:title" content="Wäsänen – Puutöitä käsityönä" />
+  <meta property="og:description" content="Junnuyrittäjän pieni puupaja Nurmijärveltä. Yksilöllisiä puutöitä ja kaiverruksia." />
+  <meta property="og:image" content="banner.png" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://wasanen.store/" />
-  <link rel="canonical" href="https://wasanen.store/" />
+  <meta property="og:url" content="https://wasanen.store/laser/" />
+  <link rel="canonical" href="https://wasanen.store/laser/" />
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
   <link rel="alternate" type="text/plain" title="LLM summary" href="/llms.txt" />
-  <title>Wäsänen – Digitaaliset ratkaisut</title>
+  <title>Wäsänen – Puutöitä käsityönä</title>
 
   <link rel="icon" type="image/png" href="logo.png" />
   <script type="application/ld+json">
@@ -21,7 +22,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Wäsänen",
-    "description": "Räätälöidyt digitaaliset työkalut, verkkosivut, analytiikka ja IoT-ratkaisut Nurmijärveltä.",
+    "description": "Junnuyrittäjän puupaja Nurmijärveltä. Yksilöllisiä puutöitä, kaiverruksia ja lahjoja käsityönä.",
     "url": "https://wasanen.store",
     "image": "https://wasanen.store/logo.png",
     "email": "contact@wasanen.fi",
@@ -33,42 +34,52 @@
     },
     "areaServed": "FI",
     "sameAs": ["https://instagram.com/wasanen.store"],
-    "knowsAbout": ["verkkosivut", "analytiikka", "IoT", "digitaaliset työkalut", "pilvipalvelut", "automaatio"]
+    "knowsAbout": ["puutyöt", "kaiverrus", "käsityö", "leikkuulauta", "yksilölliset lahjat"]
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
   />
 
   <style>
+    /* ============================================
+       Design tokens
+    ============================================ */
     :root {
-      --bg: #eef1f6;
-      --bg-2: #e2e8f0;
-      --ink: #0f172a;
-      --ink-soft: #334155;
-      --muted: #64748b;
-      --line: #cbd5e1;
-      --deep: #132238;
-      --deep-2: #0a0f18;
-      --accent: #38bdf8;
-      --accent-2: #5eead4;
-      --hero-fg: #eef1f6;
+      --bg: #f4efe6;          /* warm cream / birch */
+      --bg-2: #ebe4d6;        /* softer paper */
+      --ink: #14110d;         /* near-black ink */
+      --ink-soft: #3a342b;
+      --muted: #6b6258;
+      --line: #d8cfbf;
+      --forest: #1c2a23;      /* deep forest green */
+      --forest-2: #0e1410;    /* deepest */
+      --gold: #c8a24a;        /* refined gold */
+      --gold-2: #e0bd63;
+      --white: #ffffff;
 
       --radius-sm: 8px;
       --radius: 16px;
       --radius-lg: 24px;
+
       --container: 1240px;
       --gutter: clamp(1.25rem, 4vw, 2.5rem);
-      --shadow-sm: 0 2px 10px rgba(15, 23, 42, 0.06);
-      --shadow: 0 16px 40px rgba(15, 23, 42, 0.1);
-      --shadow-lg: 0 30px 80px rgba(15, 23, 42, 0.2);
+
+      --shadow-sm: 0 2px 10px rgba(20, 17, 13, 0.06);
+      --shadow: 0 16px 40px rgba(20, 17, 13, 0.12);
+      --shadow-lg: 0 30px 80px rgba(20, 17, 13, 0.22);
+
       --ease: cubic-bezier(0.22, 1, 0.36, 1);
     }
 
+    /* ============================================
+       Reset & base
+    ============================================ */
     *, *::before, *::after { box-sizing: border-box; }
+
     html { scroll-behavior: smooth; }
 
     body {
@@ -103,10 +114,13 @@
     p { margin: 0 0 1rem; }
 
     ::selection {
-      background: var(--accent);
-      color: var(--deep-2);
+      background: var(--gold);
+      color: var(--forest-2);
     }
 
+    /* ============================================
+       Layout helpers
+    ============================================ */
     .container {
       width: 100%;
       max-width: var(--container);
@@ -131,7 +145,7 @@
       content: "";
       width: 28px;
       height: 1px;
-      background: var(--accent);
+      background: var(--gold);
     }
 
     .section {
@@ -148,7 +162,7 @@
     .section-title em {
       font-style: italic;
       font-weight: 500;
-      color: var(--deep);
+      color: var(--forest);
     }
 
     .section-lead {
@@ -158,7 +172,9 @@
       margin-bottom: 3rem;
     }
 
-    /* Header */
+    /* ============================================
+       Header / Nav
+    ============================================ */
     .site-header {
       position: fixed;
       top: 0;
@@ -171,15 +187,16 @@
                   padding 0.4s var(--ease);
       padding: 1.25rem 0;
       border-bottom: 1px solid transparent;
-      --nav-fg: rgba(238, 241, 246, 0.95);
-      --nav-fg-soft: rgba(238, 241, 246, 0.78);
-      --nav-cta-bg: rgba(56, 189, 248, 0.2);
-      --nav-cta-fg: var(--hero-fg);
-      --nav-cta-border: rgba(56, 189, 248, 0.45);
+      /* default (over hero): light text */
+      --nav-fg: rgba(244, 239, 230, 0.95);
+      --nav-fg-soft: rgba(244, 239, 230, 0.78);
+      --nav-cta-bg: rgba(244, 239, 230, 0.12);
+      --nav-cta-fg: var(--bg);
+      --nav-cta-border: rgba(244, 239, 230, 0.35);
     }
 
     .site-header.scrolled {
-      background: rgba(238, 241, 246, 0.9);
+      background: rgba(244, 239, 230, 0.88);
       backdrop-filter: saturate(180%) blur(14px);
       -webkit-backdrop-filter: saturate(180%) blur(14px);
       border-bottom-color: var(--line);
@@ -219,14 +236,14 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 1.75rem;
+      gap: 2.25rem;
       list-style: none;
       margin: 0;
       padding: 0;
     }
 
     .nav-links a {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       font-weight: 500;
       color: var(--nav-fg-soft);
       position: relative;
@@ -240,7 +257,7 @@
       bottom: -6px;
       width: 0;
       height: 1px;
-      background: var(--accent);
+      background: var(--gold);
       transition: width 0.3s var(--ease);
     }
 
@@ -267,13 +284,13 @@
     }
 
     .site-header:not(.scrolled) .nav-cta:hover {
-      background: var(--accent);
-      color: var(--deep-2);
-      border-color: var(--accent);
+      background: var(--bg);
+      color: var(--forest-2);
+      border-color: var(--bg);
       transform: translateY(-1px);
     }
     .site-header.scrolled .nav-cta:hover {
-      background: var(--deep);
+      background: var(--forest);
       color: var(--bg);
       transform: translateY(-1px);
     }
@@ -296,7 +313,9 @@
       height: 1.5px;
       background: var(--nav-fg);
       position: relative;
-      transition: transform 0.3s var(--ease), opacity 0.3s var(--ease), background-color 0.3s var(--ease);
+      transition: transform 0.3s var(--ease),
+                  opacity 0.3s var(--ease),
+                  background-color 0.3s var(--ease);
     }
     .nav-toggle span::before,
     .nav-toggle span::after {
@@ -311,8 +330,6 @@
     .nav-toggle span::before { top: -7px; }
     .nav-toggle span::after  { top:  7px; }
 
-    .mobile-menu { display: none; }
-
     body.menu-open .site-header {
       --nav-fg: var(--ink);
       --nav-fg-soft: var(--ink-soft);
@@ -321,17 +338,22 @@
     body.menu-open .nav-toggle span::before,
     body.menu-open .nav-toggle span::after { background: var(--ink); }
 
+    /* Mobile menu hidden by default; styled & shown only on mobile breakpoint */
+    .mobile-menu { display: none; }
+
     body.menu-open .nav-toggle span { background: transparent; }
     body.menu-open .nav-toggle span::before { transform: translateY(7px) rotate(45deg); }
     body.menu-open .nav-toggle span::after  { transform: translateY(-7px) rotate(-45deg); }
 
-    /* Hero */
+    /* ============================================
+       Hero
+    ============================================ */
     .hero {
       position: relative;
       min-height: 100vh;
       display: flex;
       align-items: center;
-      color: var(--hero-fg);
+      color: var(--bg);
       overflow: hidden;
       isolation: isolate;
     }
@@ -340,10 +362,8 @@
       content: "";
       position: absolute;
       inset: 0;
-      background:
-        radial-gradient(ellipse 80% 60% at 70% 20%, rgba(56, 189, 248, 0.25), transparent 55%),
-        radial-gradient(ellipse 50% 50% at 10% 80%, rgba(94, 234, 212, 0.15), transparent 50%),
-        linear-gradient(145deg, #0a0f18 0%, #132238 45%, #1a3a52 100%);
+      background: url('banner.png') center/cover no-repeat;
+      transform: scale(1.05);
       z-index: -2;
     }
 
@@ -352,8 +372,8 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(180deg, rgba(10,15,24,0.3) 0%, rgba(10,15,24,0.5) 50%, rgba(10,15,24,0.92) 100%),
-        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2338bdf8' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        radial-gradient(60% 70% at 20% 30%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 80%),
+        linear-gradient(180deg, rgba(14,20,16,0.55) 0%, rgba(14,20,16,0.35) 40%, rgba(14,20,16,0.85) 100%);
       z-index: -1;
     }
 
@@ -361,29 +381,34 @@
       width: 100%;
       padding-top: 8rem;
       padding-bottom: 4rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
     }
 
-    .hero-eyebrow { color: rgba(238, 241, 246, 0.7); }
-    .hero-eyebrow::before { background: var(--accent-2); }
+    .hero-eyebrow {
+      color: rgba(244, 239, 230, 0.75);
+    }
+    .hero-eyebrow::before { background: var(--gold-2); }
 
     .hero-title {
-      font-size: clamp(2.4rem, 6.5vw, 5.2rem);
-      color: var(--hero-fg);
-      max-width: 18ch;
+      font-size: clamp(2.6rem, 7vw, 5.6rem);
+      color: var(--bg);
+      max-width: 16ch;
       margin-bottom: 1.5rem;
     }
 
     .hero-title em {
       font-style: italic;
       font-weight: 500;
-      color: var(--accent);
-      display: inline;
+      color: var(--gold-2);
+      display: inline-block;
     }
 
     .hero-sub {
-      max-width: 52ch;
+      max-width: 50ch;
       font-size: clamp(1rem, 1.3vw, 1.2rem);
-      color: rgba(238, 241, 246, 0.82);
+      color: rgba(244, 239, 230, 0.85);
       margin-bottom: 2.5rem;
     }
 
@@ -412,21 +437,21 @@
     }
 
     .btn-primary {
-      background: var(--accent);
-      color: var(--deep-2);
+      background: var(--gold);
+      color: var(--forest-2);
     }
     .btn-primary:hover {
-      background: var(--accent-2);
+      background: var(--gold-2);
       transform: translateY(-2px);
     }
 
     .btn-ghost {
       background: transparent;
-      color: var(--hero-fg);
-      border-color: rgba(238, 241, 246, 0.35);
+      color: var(--bg);
+      border-color: rgba(244,239,230,0.4);
     }
     .btn-ghost:hover {
-      border-color: var(--hero-fg);
+      border-color: var(--bg);
       transform: translateY(-2px);
     }
 
@@ -435,7 +460,7 @@
       color: var(--bg);
     }
     .btn-dark:hover {
-      background: var(--deep);
+      background: var(--forest);
       color: var(--bg);
       transform: translateY(-2px);
     }
@@ -449,7 +474,7 @@
       justify-content: space-between;
       align-items: flex-end;
       gap: 1.5rem;
-      color: rgba(238, 241, 246, 0.55);
+      color: rgba(244,239,230,0.7);
       font-size: 0.85rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
@@ -464,7 +489,7 @@
       content: "";
       width: 60px;
       height: 1px;
-      background: rgba(238, 241, 246, 0.4);
+      background: rgba(244,239,230,0.5);
       animation: pulseLine 2.4s var(--ease) infinite;
     }
 
@@ -473,18 +498,21 @@
       50%      { transform: scaleX(1);   transform-origin: left; opacity: 1;   }
     }
 
-    /* Marquee */
+    /* ============================================
+       Marquee
+    ============================================ */
     .marquee {
-      background: var(--deep-2);
-      color: var(--hero-fg);
+      background: var(--forest-2);
+      color: var(--bg);
       padding: 1.5rem 0;
       overflow: hidden;
+      position: relative;
     }
     .marquee-track {
       display: flex;
       gap: 3rem;
       width: max-content;
-      animation: marquee 40s linear infinite;
+      animation: marquee 35s linear infinite;
     }
     .marquee-item {
       display: inline-flex;
@@ -492,22 +520,25 @@
       gap: 1.5rem;
       font-family: 'Fraunces', serif;
       font-style: italic;
-      font-size: clamp(1.1rem, 2vw, 1.5rem);
+      font-size: clamp(1.1rem, 2vw, 1.6rem);
       white-space: nowrap;
     }
     .marquee-item::after {
-      content: "◆";
-      color: var(--accent);
+      content: "✦";
+      color: var(--gold);
       font-style: normal;
-      font-size: 0.65em;
     }
     @keyframes marquee {
       from { transform: translateX(0); }
       to   { transform: translateX(-50%); }
     }
 
-    /* About */
-    .about { background: var(--bg); }
+    /* ============================================
+       About
+    ============================================ */
+    .about {
+      background: var(--bg);
+    }
 
     .about-grid {
       display: grid;
@@ -534,14 +565,14 @@
       font-family: 'Fraunces', serif;
       font-size: clamp(1.8rem, 3vw, 2.4rem);
       font-weight: 600;
-      color: var(--deep);
+      color: var(--forest);
       line-height: 1;
       display: block;
     }
     .about-stat .label {
       font-size: 0.82rem;
       color: var(--muted);
-      letter-spacing: 0.03em;
+      letter-spacing: 0.05em;
       margin-top: 0.4rem;
     }
 
@@ -551,38 +582,29 @@
       border-radius: var(--radius-lg);
       overflow: hidden;
       box-shadow: var(--shadow-lg);
-      background:
-        linear-gradient(135deg, #132238 0%, #1a4a6e 50%, #0a0f18 100%);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 2rem;
     }
+    .about-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s var(--ease);
+    }
+    .about-visual:hover img { transform: scale(1.04); }
 
-    .about-visual-grid {
+    .about-visual::after {
+      content: "";
       position: absolute;
       inset: 0;
-      background-image:
-        linear-gradient(rgba(56, 189, 248, 0.08) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(56, 189, 248, 0.08) 1px, transparent 1px);
-      background-size: 32px 32px;
-      opacity: 0.8;
-    }
-
-    .about-visual-glow {
-      position: absolute;
-      top: 20%;
-      right: -10%;
-      width: 60%;
-      height: 50%;
-      background: radial-gradient(circle, rgba(56, 189, 248, 0.35), transparent 70%);
+      background: linear-gradient(180deg, rgba(28,42,35,0) 50%, rgba(14,20,16,0.4) 100%);
       pointer-events: none;
     }
 
     .about-badge {
-      position: relative;
-      z-index: 1;
-      background: rgba(238, 241, 246, 0.95);
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      right: 1.5rem;
+      background: rgba(244,239,230,0.92);
       backdrop-filter: blur(8px);
       padding: 1rem 1.25rem;
       border-radius: var(--radius);
@@ -596,66 +618,74 @@
       width: 36px;
       height: 36px;
       border-radius: 50%;
-      background: var(--accent);
+      background: var(--gold);
       display: grid;
       place-items: center;
-      color: var(--deep-2);
+      color: var(--forest-2);
       font-weight: 700;
       flex-shrink: 0;
     }
 
-    /* Solutions */
-    .solutions { background: var(--bg-2); }
+    /* ============================================
+       Services
+    ============================================ */
+    .services {
+      background: var(--bg-2);
+    }
 
-    .solutions-grid {
+    .services-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
     }
 
-    .solution-card {
+    .service-card {
       background: var(--bg);
       border-radius: var(--radius);
       padding: 2rem;
       border: 1px solid var(--line);
-      transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease), border-color 0.4s var(--ease);
+      transition: transform 0.4s var(--ease),
+                  box-shadow 0.4s var(--ease),
+                  border-color 0.4s var(--ease);
+      position: relative;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
-      min-height: 260px;
+      min-height: 320px;
     }
 
-    .solution-card:hover {
+    .service-card:hover {
       transform: translateY(-6px);
       box-shadow: var(--shadow);
-      border-color: var(--accent);
+      border-color: var(--gold);
     }
 
-    .solution-card .icon {
+    .service-card .icon {
       width: 56px;
       height: 56px;
       border-radius: 14px;
-      background: var(--deep);
-      color: var(--accent);
+      background: var(--forest);
+      color: var(--gold-2);
       display: grid;
       place-items: center;
       margin-bottom: 1.5rem;
       transition: transform 0.4s var(--ease);
     }
-    .solution-card:hover .icon { transform: scale(1.05); }
+    .service-card:hover .icon { transform: rotate(-4deg) scale(1.05); }
 
-    .solution-card h3 {
-      font-size: 1.35rem;
+    .service-card h3 {
+      font-size: 1.4rem;
       margin-bottom: 0.75rem;
     }
 
-    .solution-card p {
+    .service-card p {
       color: var(--ink-soft);
       font-size: 0.98rem;
       margin: 0;
       flex: 1;
     }
 
-    .solution-card .tag {
+    .service-card .tag {
       margin-top: 1.5rem;
       font-size: 0.8rem;
       letter-spacing: 0.1em;
@@ -665,28 +695,94 @@
       align-items: center;
       gap: 0.5rem;
     }
-    .solution-card .tag::before {
+    .service-card .tag::before {
       content: "";
       width: 14px;
       height: 1px;
-      background: var(--accent);
+      background: var(--gold);
     }
 
-    /* Process */
-    .process {
-      background: var(--deep-2);
-      color: var(--hero-fg);
+    /* ============================================
+       Gallery
+    ============================================ */
+    .gallery {
+      background: var(--bg);
     }
-    .process .eyebrow { color: rgba(238, 241, 246, 0.6); }
-    .process .section-title { color: var(--hero-fg); }
-    .process .section-title em { color: var(--accent); }
-    .process .section-lead { color: rgba(238, 241, 246, 0.72); }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minmax(360px, 1fr);
+      gap: 1.25rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: var(--bg-2);
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s var(--ease), filter 0.4s var(--ease);
+    }
+    .gallery-item:hover img { transform: scale(1.06); }
+
+    .gallery-item .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(14,20,16,0) 50%, rgba(14,20,16,0.85) 100%);
+      display: flex;
+      align-items: flex-end;
+      padding: 1.5rem;
+      color: var(--bg);
+      opacity: 0;
+      transition: opacity 0.4s var(--ease);
+    }
+    .gallery-item:hover .overlay { opacity: 1; }
+
+    .gallery-item .overlay h4 {
+      font-size: 1.2rem;
+      color: var(--bg);
+      margin: 0 0 0.25rem;
+    }
+    .gallery-item .overlay span {
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-2);
+    }
+
+    .g-1 { grid-column: span 1; }
+    .g-2 { grid-column: span 1; }
+
+    .gallery-cta {
+      margin-top: 2.5rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* ============================================
+       Process
+    ============================================ */
+    .process {
+      background: var(--forest-2);
+      color: var(--bg);
+    }
+    .process .eyebrow { color: rgba(244,239,230,0.65); }
+    .process .section-title { color: var(--bg); }
+    .process .section-title em { color: var(--gold-2); }
+    .process .section-lead { color: rgba(244,239,230,0.7); }
 
     .process-steps {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 2rem 1.75rem;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
       counter-reset: step;
+      position: relative;
     }
 
     .process-step {
@@ -700,24 +796,36 @@
       font-family: 'Fraunces', serif;
       font-style: italic;
       font-size: 2rem;
-      color: var(--accent);
+      color: var(--gold-2);
       position: absolute;
       top: 0;
       left: 0;
     }
+    .process-step::after {
+      content: "";
+      position: absolute;
+      top: 1.4rem;
+      left: 3.5rem;
+      right: -1rem;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(200,162,74,0.5), rgba(200,162,74,0));
+    }
+    .process-step:last-child::after { display: none; }
 
     .process-step h3 {
-      color: var(--hero-fg);
-      font-size: 1.2rem;
+      color: var(--bg);
+      font-size: 1.3rem;
       margin-bottom: 0.6rem;
     }
     .process-step p {
-      color: rgba(238, 241, 246, 0.68);
-      font-size: 0.94rem;
+      color: rgba(244,239,230,0.7);
+      font-size: 0.95rem;
       margin: 0;
     }
 
-    /* Pricing */
+    /* ============================================
+       Pricing
+    ============================================ */
     .pricing { background: var(--bg-2); }
 
     .pricing-grid {
@@ -733,21 +841,24 @@
       padding: 2rem 1.5rem;
       display: flex;
       flex-direction: column;
-      transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease), border-color 0.4s var(--ease);
+      transition: transform 0.4s var(--ease),
+                  box-shadow 0.4s var(--ease),
+                  border-color 0.4s var(--ease);
+      position: relative;
     }
     .price-card:hover {
       transform: translateY(-6px);
       box-shadow: var(--shadow);
-      border-color: var(--accent);
+      border-color: var(--gold);
     }
     .price-card.featured {
-      background: var(--deep);
-      color: var(--hero-fg);
-      border-color: var(--deep);
+      background: var(--forest);
+      color: var(--bg);
+      border-color: var(--forest);
     }
     .price-card.featured h3,
-    .price-card.featured .price { color: var(--hero-fg); }
-    .price-card.featured p { color: rgba(238, 241, 246, 0.72); }
+    .price-card.featured .price { color: var(--bg); }
+    .price-card.featured p { color: rgba(244,239,230,0.7); }
 
     .price-card .price-eyebrow {
       font-size: 0.78rem;
@@ -756,7 +867,7 @@
       color: var(--muted);
       margin-bottom: 0.5rem;
     }
-    .price-card.featured .price-eyebrow { color: var(--accent-2); }
+    .price-card.featured .price-eyebrow { color: var(--gold-2); }
 
     .price-card h3 {
       font-size: 1.25rem;
@@ -765,25 +876,25 @@
 
     .price-card .price {
       font-family: 'Fraunces', serif;
-      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-size: 2rem;
       font-weight: 600;
-      color: var(--deep);
-      line-height: 1.15;
+      color: var(--forest);
+      line-height: 1;
       margin-bottom: 0.25rem;
     }
     .price-card .price-unit {
       font-size: 0.8rem;
       color: var(--muted);
-      letter-spacing: 0.03em;
+      letter-spacing: 0.05em;
     }
-    .price-card.featured .price-unit { color: rgba(238, 241, 246, 0.55); }
+    .price-card.featured .price-unit { color: rgba(244,239,230,0.6); }
 
     .price-card .divider {
       height: 1px;
       background: var(--line);
       margin: 1.5rem 0;
     }
-    .price-card.featured .divider { background: rgba(238, 241, 246, 0.12); }
+    .price-card.featured .divider { background: rgba(244,239,230,0.15); }
 
     .price-card p {
       color: var(--ink-soft);
@@ -809,45 +920,20 @@
       width: 32px;
       height: 32px;
       border-radius: 50%;
-      background: var(--accent);
-      color: var(--deep-2);
+      background: var(--gold);
+      color: var(--forest-2);
       display: grid;
       place-items: center;
       font-weight: 700;
     }
     .pricing-note p { margin: 0; }
 
-    /* Laser band */
-    .laser-band {
+    /* ============================================
+       Contact
+    ============================================ */
+    .contact {
       background: var(--bg);
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
     }
-
-    .laser-band-inner {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 2rem;
-    }
-
-    .laser-band-text {
-      flex: 1;
-      min-width: 280px;
-      max-width: 58ch;
-    }
-    .laser-band-text p {
-      color: var(--ink-soft);
-      margin: 0;
-    }
-    .laser-band-text h2 {
-      font-size: clamp(1.5rem, 3vw, 2rem);
-      margin-bottom: 0.75rem;
-    }
-
-    /* Contact */
-    .contact { background: var(--bg); }
 
     .contact-grid {
       display: grid;
@@ -856,7 +942,10 @@
       align-items: start;
     }
 
-    .contact-info p { color: var(--ink-soft); max-width: 50ch; }
+    .contact-info p {
+      color: var(--ink-soft);
+      max-width: 50ch;
+    }
 
     .contact-list {
       list-style: none;
@@ -886,8 +975,8 @@
       width: 42px;
       height: 42px;
       border-radius: 12px;
-      background: var(--deep);
-      color: var(--accent);
+      background: var(--forest);
+      color: var(--gold-2);
       display: grid;
       place-items: center;
       flex-shrink: 0;
@@ -907,11 +996,11 @@
       color: var(--ink);
       font-weight: 500;
     }
-    .contact-list a:hover { color: var(--deep); }
+    .contact-list a:hover { color: var(--forest); }
 
     .contact-form {
-      background: var(--deep-2);
-      color: var(--hero-fg);
+      background: var(--forest-2);
+      color: var(--bg);
       padding: clamp(2rem, 3vw, 2.5rem);
       border-radius: var(--radius-lg);
       box-shadow: var(--shadow-lg);
@@ -929,17 +1018,17 @@
       right: -120px;
       width: 280px;
       height: 280px;
-      background: radial-gradient(circle, rgba(56, 189, 248, 0.2), transparent 70%);
+      background: radial-gradient(circle, rgba(200,162,74,0.18), transparent 70%);
       pointer-events: none;
     }
 
     .contact-form h3 {
-      color: var(--hero-fg);
+      color: var(--bg);
       font-size: 1.4rem;
       margin-bottom: 0.25rem;
     }
     .contact-form .form-lead {
-      color: rgba(238, 241, 246, 0.7);
+      color: rgba(244,239,230,0.7);
       font-size: 0.95rem;
       margin-bottom: 0.5rem;
     }
@@ -954,42 +1043,45 @@
       font-size: 0.78rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--accent-2);
+      color: var(--gold-2);
       font-weight: 600;
     }
 
     .field input,
     .field textarea {
-      background: rgba(238, 241, 246, 0.06);
-      border: 1px solid rgba(238, 241, 246, 0.15);
+      background: rgba(244,239,230,0.06);
+      border: 1px solid rgba(244,239,230,0.15);
       border-radius: 12px;
       padding: 0.9rem 1rem;
       font-family: inherit;
       font-size: 0.98rem;
-      color: var(--hero-fg);
+      color: var(--bg);
       transition: border-color 0.3s var(--ease), background-color 0.3s var(--ease);
     }
     .field input::placeholder,
     .field textarea::placeholder {
-      color: rgba(238, 241, 246, 0.35);
+      color: rgba(244,239,230,0.35);
     }
     .field input:focus,
     .field textarea:focus {
       outline: none;
-      border-color: var(--accent);
-      background: rgba(238, 241, 246, 0.1);
+      border-color: var(--gold);
+      background: rgba(244,239,230,0.1);
     }
     .field textarea {
       resize: vertical;
       min-height: 140px;
     }
 
-    .contact-form button { align-self: flex-start; margin-top: 0.5rem; }
+    .contact-form button {
+      align-self: flex-start;
+      margin-top: 0.5rem;
+    }
 
     .form-success {
-      background: rgba(56, 189, 248, 0.12);
-      border: 1px solid var(--accent);
-      color: var(--accent-2);
+      background: rgba(200,162,74,0.15);
+      border: 1px solid var(--gold);
+      color: var(--gold-2);
       padding: 1rem 1.25rem;
       border-radius: 12px;
       font-size: 0.95rem;
@@ -997,10 +1089,12 @@
     }
     .form-success.show { display: block; }
 
-    /* Footer */
+    /* ============================================
+       Footer
+    ============================================ */
     .footer {
-      background: var(--deep-2);
-      color: rgba(238, 241, 246, 0.65);
+      background: var(--forest-2);
+      color: rgba(244,239,230,0.65);
       padding: 4rem 0 2rem;
     }
 
@@ -1009,10 +1103,13 @@
       grid-template-columns: 1.5fr 1fr 1fr;
       gap: 3rem;
       padding-bottom: 3rem;
-      border-bottom: 1px solid rgba(238, 241, 246, 0.1);
+      border-bottom: 1px solid rgba(244,239,230,0.1);
     }
 
-    .footer .brand { color: var(--hero-fg); }
+    .footer .brand {
+      color: var(--bg);
+    }
+    .footer .brand img { filter: brightness(1); }
 
     .footer p {
       max-width: 38ch;
@@ -1021,7 +1118,7 @@
     }
 
     .footer h5 {
-      color: var(--hero-fg);
+      color: var(--bg);
       font-family: 'Inter', sans-serif;
       font-size: 0.85rem;
       letter-spacing: 0.15em;
@@ -1040,11 +1137,11 @@
     }
 
     .footer ul a {
-      color: rgba(238, 241, 246, 0.65);
+      color: rgba(244,239,230,0.65);
       font-size: 0.95rem;
       transition: color 0.25s var(--ease);
     }
-    .footer ul a:hover { color: var(--accent); }
+    .footer ul a:hover { color: var(--gold-2); }
 
     .footer-bottom {
       padding-top: 2rem;
@@ -1053,36 +1150,60 @@
       align-items: center;
       gap: 1rem;
       font-size: 0.85rem;
-      color: rgba(238, 241, 246, 0.45);
+      color: rgba(244,239,230,0.45);
     }
-    .footer-bottom .heart { color: var(--accent); }
+    .footer-bottom .heart { color: var(--gold); }
 
+    /* ============================================
+       Reveal animation
+    ============================================ */
     .reveal {
       opacity: 0;
       transform: translateY(28px);
       transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
     }
-    .reveal.in { opacity: 1; transform: translateY(0); }
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
     .reveal[data-delay="1"] { transition-delay: 0.1s; }
     .reveal[data-delay="2"] { transition-delay: 0.2s; }
     .reveal[data-delay="3"] { transition-delay: 0.3s; }
     .reveal[data-delay="4"] { transition-delay: 0.4s; }
-    .reveal[data-delay="5"] { transition-delay: 0.5s; }
-    .reveal[data-delay="6"] { transition-delay: 0.6s; }
 
+    /* ============================================
+       Responsive
+    ============================================ */
     @media (max-width: 980px) {
       .about-visual { display: none; }
       .about-grid,
-      .contact-grid { grid-template-columns: 1fr; }
-      .solutions-grid { grid-template-columns: repeat(2, 1fr); }
-      .pricing-grid { grid-template-columns: repeat(2, 1fr); }
-      .footer-top { grid-template-columns: 1fr 1fr; }
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+      }
+      .process-step::after { display: none; }
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
+      }
     }
 
     @media (max-width: 720px) {
       .nav-links,
-      .nav > .nav-cta { display: none; }
-      .nav-toggle { display: inline-flex; }
+      .nav > .nav-cta {
+        display: none;
+      }
+      .nav-toggle {
+        display: inline-flex;
+      }
 
       .mobile-menu {
         display: flex;
@@ -1092,25 +1213,44 @@
         z-index: 90;
         padding: 6rem 2rem 2rem;
         flex-direction: column;
-        gap: 1.25rem;
+        gap: 1.5rem;
         transform: translateY(-100%);
         transition: transform 0.5s var(--ease);
       }
-      body.menu-open .mobile-menu { transform: translateY(0); }
+      body.menu-open .mobile-menu {
+        transform: translateY(0);
+      }
       .mobile-menu a {
         font-family: 'Fraunces', serif;
-        font-size: 1.75rem;
+        font-size: 2rem;
         color: var(--ink);
       }
       .mobile-menu .btn { align-self: flex-start; margin-top: 1rem; }
 
       .hero-meta { display: none; }
-      .solutions-grid,
-      .pricing-grid { grid-template-columns: 1fr; }
-      .about-stats { grid-template-columns: 1fr; gap: 1rem; }
-      .footer-top { grid-template-columns: 1fr; gap: 2rem; }
-      .footer-bottom { flex-direction: column; text-align: center; }
-      .laser-band-inner { flex-direction: column; align-items: flex-start; }
+
+      .services-grid,
+      .gallery-grid,
+      .pricing-grid {
+        grid-template-columns: 1fr;
+      }
+      .gallery-grid { grid-auto-rows: 300px; }
+      .g-1, .g-2 { grid-column: span 1; grid-row: span 1; }
+
+      .process-steps {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-stats { gap: 1rem; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -1124,6 +1264,7 @@
 </head>
 <body>
 
+  <!-- Header -->
   <header class="site-header" id="siteHeader">
     <div class="container nav">
       <a href="#top" class="brand" aria-label="Wäsänen etusivu">
@@ -1132,11 +1273,12 @@
       </a>
 
       <ul class="nav-links">
-        <li><a href="#about">Mitä teen</a></li>
-        <li><a href="#solutions">Ratkaisut</a></li>
+        <li><a href="../">Etusivu</a></li>
+        <li><a href="#about">Tarina</a></li>
+        <li><a href="#services">Palvelut</a></li>
+        <li><a href="#gallery">Työt</a></li>
         <li><a href="#process">Prosessi</a></li>
         <li><a href="#pricing">Hinnoittelu</a></li>
-        <li><a href="laser/">Laser & puu</a></li>
       </ul>
 
       <a href="#contact" class="nav-cta">
@@ -1150,33 +1292,36 @@
     </div>
   </header>
 
+  <!-- Mobile menu -->
   <nav class="mobile-menu" aria-label="Mobiilivalikko">
-    <a href="#about">Mitä teen</a>
-    <a href="#solutions">Ratkaisut</a>
+    <a href="../">Etusivu</a>
+    <a href="#about">Tarina</a>
+    <a href="#services">Palvelut</a>
+    <a href="#gallery">Työt</a>
     <a href="#process">Prosessi</a>
     <a href="#pricing">Hinnoittelu</a>
-    <a href="laser/">Laser & puu</a>
     <a href="#contact" class="btn btn-dark">Ota yhteyttä</a>
   </nav>
 
+  <!-- Hero -->
   <section class="hero" id="top">
     <div class="container hero-inner">
       <div>
-        <p class="eyebrow hero-eyebrow">Digitaaliset ratkaisut · Nurmijärvi</p>
+        <p class="eyebrow hero-eyebrow">Junnuyrittäjän puupaja · Nurmijärvi</p>
         <h1 class="hero-title reveal in">
-          Ongelma pieniin osiin. <em>Ratkaisu digitaalisesti.</em>
+          Puutöitä <em>sydämellä</em> tehtynä.
         </h1>
         <p class="hero-sub reveal in" data-delay="1">
-          Autan yrityksiä ja yksityisiä asiakkaita, kun jokin arkea tai liiketoimintaa
-          hidastaa tai puuttuu kokonaan. Verkkosivut, työkalut, analytiikka, älylaitteet
-          ja pilvipalvelut – rakennetaan yhdessä, askel kerrallaan.
+          Olen opiskelija ja junnuyrittäjä Nurmijärveltä. Teen pajassani
+          yksilöllisiä puutöitä – leikkuulautoja, kylttejä, lahjoja ja
+          kaiverruksia – aina käsityönä ja juuri sinun ideallasi.
         </p>
         <div class="hero-actions reveal in" data-delay="2">
-          <a href="#contact" class="btn btn-primary">
-            Kerro ongelmastasi
+          <a href="#gallery" class="btn btn-primary">
+            Katso töitäni
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
-          <a href="#process" class="btn btn-ghost">Näin työ etenee</a>
+          <a href="#contact" class="btn btn-ghost">Ota yhteyttä</a>
         </div>
       </div>
     </div>
@@ -1187,73 +1332,67 @@
     </div>
   </section>
 
+  <!-- Marquee -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span class="marquee-item">Verkkosivut</span>
-      <span class="marquee-item">Työkalut</span>
-      <span class="marquee-item">Analytiikka</span>
-      <span class="marquee-item">IoT</span>
-      <span class="marquee-item">Pilvi</span>
-      <span class="marquee-item">Inventaario</span>
-      <span class="marquee-item">Kellotus</span>
-      <span class="marquee-item">Ravintoladata</span>
-      <span class="marquee-item">Raspberry Pi</span>
-      <span class="marquee-item">ESP</span>
-      <span class="marquee-item">Verkkosivut</span>
-      <span class="marquee-item">Työkalut</span>
-      <span class="marquee-item">Analytiikka</span>
-      <span class="marquee-item">IoT</span>
-      <span class="marquee-item">Pilvi</span>
-      <span class="marquee-item">Inventaario</span>
-      <span class="marquee-item">Kellotus</span>
-      <span class="marquee-item">Ravintoladata</span>
-      <span class="marquee-item">Raspberry Pi</span>
-      <span class="marquee-item">ESP</span>
+      <span class="marquee-item">Puutöitä</span>
+      <span class="marquee-item">Leikkuulautoja</span>
+      <span class="marquee-item">Kylttejä</span>
+      <span class="marquee-item">Kaiverruksia</span>
+      <span class="marquee-item">Yksilöllisiä lahjoja</span>
+      <span class="marquee-item">Käsityönä Nurmijärvellä</span>
+      <span class="marquee-item">Puutöitä</span>
+      <span class="marquee-item">Leikkuulautoja</span>
+      <span class="marquee-item">Kylttejä</span>
+      <span class="marquee-item">Kaiverruksia</span>
+      <span class="marquee-item">Yksilöllisiä lahjoja</span>
+      <span class="marquee-item">Käsityönä Nurmijärvellä</span>
     </div>
   </div>
 
+  <!-- About -->
   <section class="section about" id="about">
     <div class="container">
       <div class="about-grid">
         <div class="about-text reveal">
-          <p class="eyebrow">Mitä teen</p>
-          <h2 class="section-title">Ratkaisen ongelmia <em>digitaalisesti</em>.</h2>
+          <p class="eyebrow">Tarina</p>
+          <h2 class="section-title">Junnuyrittäjän puupaja <em>Nurmijärveltä</em>.</h2>
           <p>
-            Asiakkaalla on ongelma – data puuttuu, prosessi on kökkö tai järjestelmät
-            eivät puhu keskenään. Jaan tilanteen pieniin osiin ja rakennan ratkaisun
-            niiden pohjalta. Olen tehnyt työkaluja vuosia; tämä on ammattitaitoa, mutta
-            myös intohimo, joten hinnoittelu pysyy reiluna.
+            Moi! Olen opiskelija ja junnuyrittäjä, ja Wäsänen on minun pieni
+            puupajani Nurmijärvellä. En ole ammattilainen vaan harrastaja,
+            joka rakastaa puun työstämistä ja uuden oppimista – ja tekee sitä
+            nyt myös tilauksesta.
           </p>
           <p>
-            Sinun tarvitsee vain kertoa, mikä ei toimi: kutsu paikan päälle (asennus
-            ilmaiseksi, matkakulut erikseen), puhelu, videopalaveri tai viestit.
-            Loput hoituvat minun puolella.
+            Pajalla syntyy leikkuulautoja, kylttejä, koristeita ja yksilöllisiä
+            lahjoja. Teen jokaisen kappaleen itse käsityönä, kuuntelen
+            tarkasti mitä toivot ja viimeistelen kaiken huolella. Hinnoittelu
+            on opiskelijaystävällistä – sekä minulle että sinulle.
           </p>
 
           <div class="about-stats">
             <div class="about-stat">
-              <span class="num">0 €</span>
-              <span class="label">Suunnittelu, demot ja tarjous ennen sopimusta</span>
+              <span class="num">100%</span>
+              <span class="label">Käsityönä Suomessa</span>
             </div>
             <div class="about-stat">
-              <span class="num">1</span>
-              <span class="label">Ongelma kerrallaan – selkeä polku</span>
+              <span class="num">1:1</span>
+              <span class="label">Aina sinun mittoihisi</span>
             </div>
             <div class="about-stat">
               <span class="num">∞</span>
-              <span class="label">Rajattomat työkalutyypit</span>
+              <span class="label">Intoa tekemiseen</span>
             </div>
           </div>
         </div>
 
-        <div class="about-visual reveal" data-delay="1" aria-hidden="true">
-          <div class="about-visual-grid"></div>
-          <div class="about-visual-glow"></div>
+        <div class="about-visual reveal" data-delay="1">
+          <img src="cboard1.jpg" alt="Kaiverrettu puinen leikkuulauta ikkunan ääressä" />
           <div class="about-badge">
-            <div class="badge-icon">◆</div>
+            <div class="badge-icon">✦</div>
             <div>
-              <strong>Räätälöity juuri sinulle</strong><br/>
-              <span style="color: var(--muted); font-size: 0.85rem;">Ei valmispakettia – ratkaisu syntyy ongelmasta.</span>
+              <strong>Tehty käsityönä</strong><br/>
+              <span style="color: var(--muted); font-size: 0.85rem;">Jokainen kappale yksilöllisesti viimeistelty.</span>
             </div>
           </div>
         </div>
@@ -1261,224 +1400,211 @@
     </div>
   </section>
 
-  <section class="section solutions" id="solutions">
+  <!-- Services -->
+  <section class="section services" id="services">
     <div class="container">
       <div class="reveal">
-        <p class="eyebrow">Ratkaisut</p>
-        <h2 class="section-title">Mitä voi <em>syntyä</em>?</h2>
+        <p class="eyebrow">Palvelut</p>
+        <h2 class="section-title">Mitä pajalta <em>lähtee</em>?</h2>
         <p class="section-lead">
-          Alla esimerkkejä – lopullinen työkalu räätälöidään aina sinun ongelmastasi.
-          Ja oikeastaan mitä tahansa, kun ongelma on selkeä.
+          Painopiste on puutöissä – kotimainen puu on minulle se rakkain
+          materiaali. Mukaan voi tilata kaiverruksen omalla tekstillä,
+          logolla tai kuvalla.
         </p>
       </div>
 
-      <div class="solutions-grid">
-        <div class="solution-card reveal" data-delay="1">
+      <div class="services-grid">
+        <div class="service-card reveal" data-delay="1">
           <div class="icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c2-4 5-7 9-7s7 3 9 7"/><path d="M3 12c2 4 5 7 9 7s7-3 9-7"/><path d="M12 5v14"/><path d="M7 9c1 1 2 2 5 2s4-1 5-2"/><path d="M7 15c1-1 2-2 5-2s4 1 5 2"/></svg>
           </div>
-          <h3>Data & analytiikka</h3>
+          <h3>Puutyöt</h3>
           <p>
-            Esim. ravintolassa kävijät, kiinnostus ja toimivuus – mittaus, näkymät
-            ja päätöksiin tukeva data.
+            Leikkuulaudat, kyltit, taulut, koristeet ja pienesineet
+            suomalaisesta puusta. Sopiva paksuus, viimeistely ja mitat aina
+            sinun tarpeesi mukaan.
           </p>
-          <span class="tag">Ravintolat</span>
+          <span class="tag">Pääjuttu</span>
         </div>
 
-        <div class="solution-card reveal" data-delay="2">
+        <div class="service-card reveal" data-delay="2">
           <div class="icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
           </div>
-          <h3>Inventaario & varasto</h3>
+          <h3>Kaiverrukset</h3>
           <p>
-            Yrityksen tavaroiden seuranta, raportit ja hallinta – selkeästi
-            käyttöliittymästä.
+            Oma teksti, nimi, päivämäärä, logo tai kuva tarkkana
+            kaiverruksena puuhun – ja tarvittaessa myös nahkaan, akryyliin
+            tai paperiin.
           </p>
-          <span class="tag">Yritykset</span>
+          <span class="tag">Personointi</span>
         </div>
 
-        <div class="solution-card reveal" data-delay="3">
+        <div class="service-card reveal" data-delay="3">
           <div class="icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
           </div>
-          <h3>Kellotus & aikataulut</h3>
+          <h3>Yksilölliset lahjat</h3>
           <p>
-            Työvuorot, muistutukset ja integraatiot – kun aikataulu pitää
-            synkassa ihmisten ja laitteiden kanssa.
+            Häät, syntymäpäivät, valmistujaiset – kun haluat muistaa läheistä
+            jollain, mitä ei muualta saa. Mietitään yhdessä mikä toimisi ja
+            tehdään juuri sellainen.
           </p>
-          <span class="tag">Tiimit</span>
-        </div>
-
-        <div class="solution-card reveal" data-delay="4">
-          <div class="icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
-          </div>
-          <h3>Älyelektroniikka</h3>
-          <p>
-            Raspberry Pi, ESP, anturit ja näytöt – fyysinen maailma yhdistettynä
-            verkkoon ja työkaluun.
-          </p>
-          <span class="tag">IoT</span>
-        </div>
-
-        <div class="solution-card reveal" data-delay="5">
-          <div class="icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-          </div>
-          <h3>Verkkosivut & työkalut</h3>
-          <p>
-            Julkinen sivu, sisäiset työkalut ja hallintapaneelit – mitä tarvitset
-            näkyväksi tai käyttöön.
-          </p>
-          <span class="tag">Verkko</span>
-        </div>
-
-        <div class="solution-card reveal" data-delay="6">
-          <div class="icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
-          </div>
-          <h3>Pilvi & yhteistyö</h3>
-          <p>
-            Pilvipalveluihin perustuvat collab-järjestelmät, synkronointi ja
-            jaettu työ – missä tiimi onkin.
-          </p>
-          <span class="tag">Pilvi</span>
+          <span class="tag">Merkitys</span>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Gallery -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="reveal">
+        <p class="eyebrow">Galleria</p>
+        <h2 class="section-title">Tässä <em>työnjälkeä</em>.</h2>
+        <p class="section-lead">
+          Pieni kurkistus pajaan. Lisää töitä ja kulissien takaa kuvia
+          päivittäin Instagramissa <a href="https://instagram.com/wasanen.store" target="_blank" rel="noopener" style="color: var(--forest); text-decoration: underline;">@wasanen.store</a>.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <a class="gallery-item g-1 reveal" data-delay="1" href="cboard2.jpg" target="_blank" rel="noopener">
+          <img src="cboard2.jpg" alt="Puinen leikkuulauta jossa lihalämpötilojen kaiverrus" />
+          <div class="overlay">
+            <div>
+              <span>Puutyö · Bambu</span>
+              <h4>Lihalämpötila-lauta</h4>
+            </div>
+          </div>
+        </a>
+
+        <a class="gallery-item g-2 reveal" data-delay="2" href="cboard1.jpg" target="_blank" rel="noopener">
+          <img src="cboard1.jpg" alt="Kaiverrettu leikkuulauta luonnollisessa valossa" />
+          <div class="overlay">
+            <div>
+              <span>Puutyö · Yksityiskohta</span>
+              <h4>Sama lauta, tunnelmassa</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="gallery-cta">
+        <a href="https://instagram.com/wasanen.store" target="_blank" rel="noopener" class="btn btn-dark">
+          Lisää töitä Instagramissa
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
   <section class="section process" id="process">
     <div class="container">
       <div class="reveal">
         <p class="eyebrow">Prosessi</p>
-        <h2 class="section-title">Näin <em>työ etenee</em>.</h2>
+        <h2 class="section-title">Näin <em>tilaus etenee</em>.</h2>
         <p class="section-lead">
-          Selkeä polku ilman piilokuluja suunnitteluvaiheessa. Maksat vasta kun ratkaisu
-          on käytössä ja kuukausimaksu alkaa.
+          Selkeä, mutkaton ja avoin prosessi alusta loppuun – ei piilokuluja,
+          ei yllätyksiä.
         </p>
       </div>
 
       <div class="process-steps">
         <div class="process-step reveal" data-delay="1">
           <h3>Yhteydenotto</h3>
-          <p>Lomake tai sähköposti. Kerro ongelma vapaasti – pienikin alku riittää.</p>
+          <p>Lähetä viesti lomakkeella tai sähköpostilla. Kerro mitä mietit – ihan vapaamuotoisesti.</p>
         </div>
         <div class="process-step reveal" data-delay="2">
-          <h3>Kartoitus</h3>
-          <p>Käymme ongelman läpi puhelimessa, videolla, viesteillä tai paikan päällä.</p>
+          <h3>Suunnittelu</h3>
+          <p>Käymme yhdessä ideaa läpi, hahmottelemme vaihtoehtoja ja päätämme materiaalin.</p>
         </div>
         <div class="process-step reveal" data-delay="3">
-          <h3>Ensimmäinen demo</h3>
-          <p>Ilmainen demo ja lyhyt briiffi: miten ratkaisu toimisi käytännössä.</p>
+          <h3>Tuotanto</h3>
+          <p>Laserkaiverrus tai -leikkuu, viimeistely ja pakkaus huolella. Pidän sinut kartalla.</p>
         </div>
         <div class="process-step reveal" data-delay="4">
-          <h3>Viimeinen demo</h3>
-          <p>Toinen demo; esitys kasvotusten tai videopalaverissa.</p>
-        </div>
-        <div class="process-step reveal" data-delay="5">
-          <h3>Tarjous</h3>
-          <p>Kun kaikki on selvä, tarjous sähköpostiin. Tähän asti kaikki on ilmaista.</p>
-        </div>
-        <div class="process-step reveal" data-delay="6">
-          <h3>Käyttöönotto</h3>
-          <p>Ilmainen asennus paikan päällä. Laitteet (Pi, ESP, palvelin…) laskutetaan erikseen ostohinnalla.</p>
-        </div>
-        <div class="process-step reveal">
-          <h3>Ylläpito</h3>
-          <p>Kiinteä, edullinen kuukausimaksu työkalusta – arvio tarjouksessa, ei yllätyksiä.</p>
+          <h3>Toimitus</h3>
+          <p>Nouto Nurmijärveltä tai postitus kotiin. Mukana aina pieni kiitos.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Pricing -->
   <section class="section pricing" id="pricing">
     <div class="container">
       <div class="reveal">
         <p class="eyebrow">Hinnoittelu</p>
-        <h2 class="section-title">Läpinäkyvä ja <em>reilu</em>.</h2>
+        <h2 class="section-title">Junnuyrittäjän <em>reilut hinnat</em>.</h2>
         <p class="section-lead">
-          Tarkat summat tulevat tarjoukseen. Suunnittelu ja demot ovat aina ilmaisia –
-          maksullinen vaihe alkaa vasta käytöstä ja laitteista.
+          Tarkka hinta sovitaan aina yksilöllisesti, mutta tässä suuntaa antava
+          taso. Pyrin pitämään hinnat opiskelijaystävällisinä – sekä sinulle
+          että itselleni.
         </p>
       </div>
 
       <div class="pricing-grid">
-        <div class="price-card featured reveal" data-delay="1">
-          <span class="price-eyebrow">Ilmainen</span>
-          <h3>Suunnittelu & demot</h3>
-          <div class="price">0 €</div>
-          <span class="price-unit">kartoitus → 2 demoa → tarjous</span>
+        <div class="price-card reveal" data-delay="1">
+          <span class="price-eyebrow">Pienet työt</span>
+          <h3>Avaimenperät & nimikyltit</h3>
+          <div class="price">0,25 – 5 €</div>
+          <span class="price-unit">per kpl</span>
           <div class="divider"></div>
-          <p>Kartoitus, kaksi demoa, esitys ja tarjous ennen kuin sitoudut mihinkään.</p>
+          <p>Pieniä kaiverruksia ja yksinkertaisia leikkauksia – mainio pieni muisto tai liikelahja.</p>
         </div>
 
-        <div class="price-card reveal" data-delay="2">
-          <span class="price-eyebrow">Erillinen</span>
-          <h3>Laitteistokulut</h3>
-          <div class="price">Ostohinta</div>
-          <span class="price-unit">läpinäkyvä erittely</span>
+        <div class="price-card featured reveal" data-delay="2">
+          <span class="price-eyebrow">Suosittu</span>
+          <h3>Keskikokoiset puutyöt</h3>
+          <div class="price">5 – 30 €</div>
+          <span class="price-unit">per kpl</span>
           <div class="divider"></div>
-          <p>Raspberry Pi, ESP, palvelimet, näytöt ja muut hankinnat laskutetaan suoraan sinulle.</p>
+          <p>Kyltit, taulut, leikkuulaudat ja muut käytännön työt yksilöllisellä kaiverruksella.</p>
         </div>
 
         <div class="price-card reveal" data-delay="3">
-          <span class="price-eyebrow">Käyttöönotto</span>
-          <h3>Asennus</h3>
-          <div class="price">Ilmainen</div>
-          <span class="price-unit">työ; matkakulut erikseen</span>
+          <span class="price-eyebrow">Isot puutyöt</span>
+          <h3>Erityistilaukset</h3>
+          <div class="price">20 – 100 €+</div>
+          <span class="price-unit">per kpl</span>
           <div class="divider"></div>
-          <p>Tulen paikan päälle asentamaan järjestelmän – työ on ilmainen, matkakulut erikseen.</p>
+          <p>Erikoiskasausta tai laajempaa työtä vaativat puutyöt – mietitään yhdessä paras toteutus.</p>
         </div>
 
         <div class="price-card reveal" data-delay="4">
-          <span class="price-eyebrow">Käyttö</span>
-          <h3>Kuukausimaksu</h3>
-          <div class="price">Tarjouksessa</div>
-          <span class="price-unit">kiinteä kuukausihinta</span>
+          <span class="price-eyebrow">Muut materiaalit</span>
+          <h3>Kaiverrukset erikoispintaan</h3>
+          <div class="price">alk. 15 €</div>
+          <span class="price-unit">per kpl</span>
           <div class="divider"></div>
-          <p>Edullinen kuukausimaksu työkalun käytöstä – arvio tarjouksessa, ei piilokuluja.</p>
+          <p>Pyynnöstä myös kaiverruksia kiviin, koruihin ja muihin pintoihin – puutyö on silti pääjuttu.</p>
         </div>
       </div>
 
       <div class="pricing-note reveal">
         <div class="pin">i</div>
         <p>
-          Kuukausimaksu arvioidaan tarjouksessa ja pysyy kiinteenä. Se riippuu mm.
-          hostingista, datamäärästä ja ylläpidon laajuudesta. Olen tehnyt työkaluja
-          vuosia, mutta pidän hinnoittelun reiluna, koska tämä on minulle myös
-          intohimo. <strong>Kysy rohkeasti</strong> – vastaan mielelläni!
+          Hinta riippuu mm. työn koosta, kerralla tilatusta määrästä,
+          materiaalista ja yksityiskohtaisuudesta. Mahdolliset toimituskulut
+          lisätään hintaan. <strong>Kysy rohkeasti tarjousta</strong> – vastaan
+          mielelläni!
         </p>
       </div>
     </div>
   </section>
 
-  <section class="section laser-band" id="laser">
-    <div class="container laser-band-inner reveal">
-      <div class="laser-band-text">
-        <h2>Sivutoimena myös puutyöt</h2>
-        <p>
-          Harrastan laserkaiverrusta, leikkuulautoja ja yksilöllisiä lahjoja.
-          Sama Wäsänen ja samat yhteystiedot – erillinen palvelu omalla sivullaan.
-        </p>
-      </div>
-      <a href="laser/" class="btn btn-dark">
-        Siirry laser-palveluun
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </a>
-    </div>
-  </section>
-
+  <!-- Contact -->
   <section class="section contact" id="contact">
     <div class="container">
       <div class="contact-grid">
         <div class="contact-info reveal">
           <p class="eyebrow">Yhteys</p>
-          <h2 class="section-title">Mikä ongelma pitäisi <em>ratkaista</em>?</h2>
+          <h2 class="section-title">Onko mielessä <em>jotain erityistä</em>?</h2>
           <p>
-            Kerro tilanteesta – mitä pitäisi mitata, automatisoida tai rakentaa.
-            Pienikin alku riittää, viilataan loput yhdessä. Vastaan tyypillisesti
-            saman päivän aikana.
+            Kerro ihmeessä ideastasi – vastaan tyypillisesti saman päivän
+            aikana. Pienikin idea riittää alkuun, viilataan loput yhdessä.
           </p>
 
           <ul class="contact-list">
@@ -1528,8 +1654,8 @@
           method="POST"
           id="contactForm"
         >
-          <h3>Aloita keskustelu</h3>
-          <p class="form-lead">Kerro ongelmastasi – mitä lyhyemmin tai pidemmin haluat, sopii vapaamuotoisesti.</p>
+          <h3>Pyydä tarjous</h3>
+          <p class="form-lead">Kerro ideastasi – mitä lyhyemmin tai pidemmin haluat, sopii ihan vapaamuotoisesti.</p>
 
           <div class="field">
             <label for="email">Sähköposti</label>
@@ -1538,12 +1664,12 @@
 
           <div class="field">
             <label for="subject">Aihe (vapaaehtoinen)</label>
-            <input type="text" name="subject" id="subject" placeholder="Esim. kävijälaskenta ravintolaan" />
+            <input type="text" name="subject" id="subject" placeholder="Esim. leikkuulauta lahjaksi" />
           </div>
 
           <div class="field">
-            <label for="message">Mitä pitäisi ratkaista?</label>
-            <textarea name="message" id="message" rows="6" placeholder="Ravintolassa haluaisin nähdä kävijämäärät… / Tarvitsen inventaarion…" required></textarea>
+            <label for="message">Mitä saisi olla?</label>
+            <textarea name="message" id="message" rows="6" placeholder="Kerro ideastasi, materiaalitoiveistasi, aikataulusta..." required></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary">
@@ -1559,6 +1685,7 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
@@ -1568,20 +1695,20 @@
             <span>Wäsänen</span>
           </a>
           <p>
-            Digitaaliset ratkaisut Nurmijärveltä – verkkosivut, työkalut, analytiikka
-            ja älylaitteet räätälöitynä ongelmastasi.
+            Junnuyrittäjän pieni puupaja Nurmijärvellä. Yksilöllisiä
+            puutöitä, kaiverruksia ja lahjoja – aina käsityönä.
           </p>
         </div>
 
         <div>
           <h5>Sivut</h5>
           <ul>
-            <li><a href="#about">Mitä teen</a></li>
-            <li><a href="#solutions">Ratkaisut</a></li>
+            <li><a href="../">Digitaaliset ratkaisut</a></li>
+            <li><a href="#about">Tarina</a></li>
+            <li><a href="#services">Palvelut</a></li>
+            <li><a href="#gallery">Galleria</a></li>
             <li><a href="#process">Prosessi</a></li>
             <li><a href="#pricing">Hinnoittelu</a></li>
-            <li><a href="laser/">Laser & puu</a></li>
-            <li><a href="#contact">Yhteys</a></li>
           </ul>
         </div>
 
@@ -1590,19 +1717,20 @@
           <ul>
             <li><a href="mailto:contact@wasanen.fi">contact@wasanen.fi</a></li>
             <li><a href="https://instagram.com/wasanen.store" target="_blank" rel="noopener">Instagram @wasanen.store</a></li>
-            <li><a href="#contact">Aloita keskustelu</a></li>
+            <li><a href="#contact">Pyydä tarjous</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
         <span>© <span id="year">2026</span> Wäsänen · Anna mä wäsään.</span>
-        <span>Tehty <span class="heart">◆</span> Nurmijärvellä</span>
+        <span>Tehty <span class="heart">✦</span> Nurmijärvellä</span>
       </div>
     </div>
   </footer>
 
   <script>
+    // Sticky header background on scroll
     const header = document.getElementById('siteHeader');
     const onScroll = () => {
       if (window.scrollY > 20) header.classList.add('scrolled');
@@ -1611,6 +1739,7 @@
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
 
+    // Mobile menu toggle
     const toggle = document.querySelector('.nav-toggle');
     toggle.addEventListener('click', () => {
       const open = document.body.classList.toggle('menu-open');
@@ -1623,6 +1752,7 @@
       });
     });
 
+    // Reveal on scroll using IntersectionObserver
     const revealItems = document.querySelectorAll('.reveal');
     if ('IntersectionObserver' in window) {
       const io = new IntersectionObserver((entries) => {
@@ -1633,13 +1763,16 @@
           }
         });
       }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
       revealItems.forEach(el => io.observe(el));
     } else {
       revealItems.forEach(el => el.classList.add('in'));
     }
 
+    // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
 
+    // Contact form: async submit with success message (keeps Formspree action)
     const form = document.getElementById('contactForm');
     const success = document.getElementById('formSuccess');
     form.addEventListener('submit', async (e) => {
