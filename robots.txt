@@ -1,0 +1,9 @@
+# Wäsänen – https://wasanen.store
+User-agent: *
+Allow: /
+
+# Tekoäly- ja hakurobotit saavat lukea sivun yhteenvedon
+# https://llmstxt.org/
+Allow: /llms.txt
+
+Sitemap: https://wasanen.store/sitemap.xml
