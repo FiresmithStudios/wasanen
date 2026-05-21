@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0a0f18" />
   <meta name="description" content="Wäsänen – räätälöidyt digitaaliset työkalut, verkkosivut, analytiikka ja IoT-ratkaisut Nurmijärveltä. Ilmainen suunnittelu ja demot ennen tarjousta." />
-  <meta name="keywords" content="digitaaliset ratkaisut, verkkosivut, analytiikka, IoT, työkalut, Nurmijärvi, Wäsänen, Raspberry Pi, pilvi, inventaario" />
+  <meta name="keywords" content="digitaaliset ratkaisut, ohjelmointi, verkkosivut, React, Python, analytiikka, IoT, logistiikka, varasto, loyalty, pelit, Nurmijärvi, Wäsänen" />
   <meta property="og:title" content="Wäsänen – Digitaaliset ratkaisut" />
   <meta property="og:description" content="Ongelma pieniin osiin. Ratkaisu digitaalisesti – verkkosivut, työkalut, analytiikka ja älylaitteet Nurmijärveltä." />
   <meta property="og:type" content="website" />
@@ -33,7 +33,7 @@
     },
     "areaServed": "FI",
     "sameAs": ["https://instagram.com/wasanen.store"],
-    "knowsAbout": ["verkkosivut", "analytiikka", "IoT", "digitaaliset työkalut", "pilvipalvelut", "automaatio"]
+    "knowsAbout": ["ohjelmointi", "verkkosivut", "React", "Python", "analytiikka", "IoT", "logistiikka", "loyalty-sovellukset", "pelit", "graafinen suunnittelu"]
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -484,7 +484,7 @@
       display: flex;
       gap: 3rem;
       width: max-content;
-      animation: marquee 40s linear infinite;
+      animation: marquee 55s linear infinite;
     }
     .marquee-item {
       display: inline-flex;
@@ -670,6 +670,29 @@
       width: 14px;
       height: 1px;
       background: var(--accent);
+    }
+
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .tech-tag {
+      padding: 0.45rem 0.9rem;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+      transition: border-color 0.25s var(--ease), color 0.25s var(--ease);
+    }
+
+    .tech-tag:hover {
+      border-color: var(--accent);
+      color: var(--deep);
     }
 
     /* Process */
@@ -1168,8 +1191,8 @@
         </h1>
         <p class="hero-sub reveal in" data-delay="1">
           Autan yrityksiä ja yksityisiä asiakkaita, kun jokin arkea tai liiketoimintaa
-          hidastaa tai puuttuu kokonaan. Verkkosivut, työkalut, analytiikka, älylaitteet
-          ja pilvipalvelut – rakennetaan yhdessä, askel kerrallaan.
+          hidastaa tai puuttuu kokonaan. Ohjelmointi, suunnittelu, verkkosivut, analytiikka,
+          logistiikka, pelit, loyalty-sovellukset ja älylaitteet – rakennetaan yhdessä.
         </p>
         <div class="hero-actions reveal in" data-delay="2">
           <a href="#contact" class="btn btn-primary">
@@ -1189,26 +1212,56 @@
 
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
+      <span class="marquee-item">Ohjelmointi</span>
       <span class="marquee-item">Verkkosivut</span>
-      <span class="marquee-item">Työkalut</span>
+      <span class="marquee-item">Suunnittelu</span>
+      <span class="marquee-item">Graafinen suunnittelu</span>
       <span class="marquee-item">Analytiikka</span>
+      <span class="marquee-item">Varasto</span>
+      <span class="marquee-item">Logistiikka</span>
+      <span class="marquee-item">Tuotanto</span>
+      <span class="marquee-item">Loyalty-app</span>
+      <span class="marquee-item">Pelit</span>
+      <span class="marquee-item">Kommunikaatio</span>
+      <span class="marquee-item">Tietokanta</span>
+      <span class="marquee-item">Python</span>
+      <span class="marquee-item">React</span>
+      <span class="marquee-item">JavaScript</span>
+      <span class="marquee-item">HTML & CSS</span>
+      <span class="marquee-item">SQL</span>
+      <span class="marquee-item">C#</span>
+      <span class="marquee-item">PHP</span>
+      <span class="marquee-item">Java</span>
       <span class="marquee-item">IoT</span>
       <span class="marquee-item">Pilvi</span>
-      <span class="marquee-item">Inventaario</span>
+      <span class="marquee-item">Raspberry Pi</span>
       <span class="marquee-item">Kellotus</span>
       <span class="marquee-item">Ravintoladata</span>
-      <span class="marquee-item">Raspberry Pi</span>
-      <span class="marquee-item">ESP</span>
+      <span class="marquee-item">Ohjelmointi</span>
       <span class="marquee-item">Verkkosivut</span>
-      <span class="marquee-item">Työkalut</span>
+      <span class="marquee-item">Suunnittelu</span>
+      <span class="marquee-item">Graafinen suunnittelu</span>
       <span class="marquee-item">Analytiikka</span>
+      <span class="marquee-item">Varasto</span>
+      <span class="marquee-item">Logistiikka</span>
+      <span class="marquee-item">Tuotanto</span>
+      <span class="marquee-item">Loyalty-app</span>
+      <span class="marquee-item">Pelit</span>
+      <span class="marquee-item">Kommunikaatio</span>
+      <span class="marquee-item">Tietokanta</span>
+      <span class="marquee-item">Python</span>
+      <span class="marquee-item">React</span>
+      <span class="marquee-item">JavaScript</span>
+      <span class="marquee-item">HTML & CSS</span>
+      <span class="marquee-item">SQL</span>
+      <span class="marquee-item">C#</span>
+      <span class="marquee-item">PHP</span>
+      <span class="marquee-item">Java</span>
       <span class="marquee-item">IoT</span>
       <span class="marquee-item">Pilvi</span>
-      <span class="marquee-item">Inventaario</span>
+      <span class="marquee-item">Raspberry Pi</span>
       <span class="marquee-item">Kellotus</span>
       <span class="marquee-item">Ravintoladata</span>
-      <span class="marquee-item">Raspberry Pi</span>
-      <span class="marquee-item">ESP</span>
     </div>
   </div>
 
@@ -1275,75 +1328,164 @@
       <div class="solutions-grid">
         <div class="solution-card reveal" data-delay="1">
           <div class="icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           </div>
-          <h3>Data & analytiikka</h3>
+          <h3>Ohjelmointi & kehitys</h3>
           <p>
-            Esim. ravintolassa kävijät, kiinnostus ja toimivuus – mittaus, näkymät
-            ja päätöksiin tukeva data.
+            Räätälöidyt järjestelmät, API:t ja automaatio – backendista käyttöliittymään,
+            juuri sinun prosessiin.
           </p>
-          <span class="tag">Ravintolat</span>
+          <span class="tag">Koodi</span>
         </div>
 
         <div class="solution-card reveal" data-delay="2">
           <div class="icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
-          <h3>Inventaario & varasto</h3>
+          <h3>Verkkosivut & sovellukset</h3>
           <p>
-            Yrityksen tavaroiden seuranta, raportit ja hallinta – selkeästi
-            käyttöliittymästä.
-          </p>
-          <span class="tag">Yritykset</span>
-        </div>
-
-        <div class="solution-card reveal" data-delay="3">
-          <div class="icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <h3>Kellotus & aikataulut</h3>
-          <p>
-            Työvuorot, muistutukset ja integraatiot – kun aikataulu pitää
-            synkassa ihmisten ja laitteiden kanssa.
-          </p>
-          <span class="tag">Tiimit</span>
-        </div>
-
-        <div class="solution-card reveal" data-delay="4">
-          <div class="icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
-          </div>
-          <h3>Älyelektroniikka</h3>
-          <p>
-            Raspberry Pi, ESP, anturit ja näytöt – fyysinen maailma yhdistettynä
-            verkkoon ja työkaluun.
-          </p>
-          <span class="tag">IoT</span>
-        </div>
-
-        <div class="solution-card reveal" data-delay="5">
-          <div class="icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-          </div>
-          <h3>Verkkosivut & työkalut</h3>
-          <p>
-            Julkinen sivu, sisäiset työkalut ja hallintapaneelit – mitä tarvitset
+            Julkiset sivut, hallintapaneelit, mobiilikäyttö ja sisäiset työkalut –
             näkyväksi tai käyttöön.
           </p>
           <span class="tag">Verkko</span>
         </div>
 
+        <div class="solution-card reveal" data-delay="3">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3>Suunnittelu & UX</h3>
+          <p>
+            Käyttöliittymät, työnkulut ja rakenne ennen koodausta – selkeä,
+            toimiva kokemus loppukäyttäjälle.
+          </p>
+          <span class="tag">Suunnittelu</span>
+        </div>
+
+        <div class="solution-card reveal" data-delay="4">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/><circle cx="6.5" cy="17.5" r="2.5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.323-.437-.713-.437-1.125 0-1.036.84-1.875 1.875-1.875H16.5c2.485 0 4.5-2.015 4.5-4.5C21 6.015 18.985 4 16.5 4H12z"/></svg>
+          </div>
+          <h3>Graafinen suunnittelu</h3>
+          <p>
+            Visuaalinen ilme, layoutit ja materiaalit – brändi ja käyttöliittymä
+            tukevat samaa viestiä.
+          </p>
+          <span class="tag">Visuaalisuus</span>
+        </div>
+
+        <div class="solution-card reveal" data-delay="5">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>Data & analytiikka</h3>
+          <p>
+            Mittaus, raportit ja näkymät – esim. ravintolan kävijät ja kiinnostus,
+            mutta myös muu liiketoimintadata.
+          </p>
+          <span class="tag">Analytiikka</span>
+        </div>
+
         <div class="solution-card reveal" data-delay="6">
           <div class="icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
           </div>
-          <h3>Pilvi & yhteistyö</h3>
+          <h3>Varasto & logistiikka</h3>
           <p>
-            Pilvipalveluihin perustuvat collab-järjestelmät, synkronointi ja
-            jaettu työ – missä tiimi onkin.
+            Inventaario, varastonhallinta ja kuljetus-/toimitusketjut – mitä missä
+            on ja minne menee.
           </p>
-          <span class="tag">Pilvi</span>
+          <span class="tag">Logistiikka</span>
         </div>
+
+        <div class="solution-card reveal" data-delay="1">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7-7H4a2 2 0 0 0-2 2v17z"/><polyline points="14 2 14 9 21 9"/></svg>
+          </div>
+          <h3>Tuotanto & prosessit</h3>
+          <p>
+            Tuotantolinjat, työvaiheet ja seuranta – kun pitää nähdä mitä tapahtuu
+            ja missä vaiheessa ollaan.
+          </p>
+          <span class="tag">Tuotanto</span>
+        </div>
+
+        <div class="solution-card reveal" data-delay="2">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Loyalty & asiakkuus</h3>
+          <p>
+            Kanta-asiakasohjelmat, leimat, edut ja sovellukset – pysyvä yhteys
+            asiakkaaseen.
+          </p>
+          <span class="tag">Asiakkaat</span>
+        </div>
+
+        <div class="solution-card reveal" data-delay="3">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><line x1="15" y1="11" x2="15" y2="11.01"/><line x1="18" y1="13" x2="18" y2="13.01"/></svg>
+          </div>
+          <h3>Pelit & vuorovaikutus</h3>
+          <p>
+            Pelit, simulaatiot ja interaktiiviset työkalut – oppimiseen, markkinointiin
+            tai sisäiseen käyttöön.
+          </p>
+          <span class="tag">Pelit</span>
+        </div>
+
+        <div class="solution-card reveal" data-delay="4">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Kommunikaatio</h3>
+          <p>
+            Ilmoitukset, viestit, integraatiot ja kanavat – oikea tieto oikealle
+            ihmiselle oikeaan aikaan.
+          </p>
+          <span class="tag">Viestintä</span>
+        </div>
+
+        <div class="solution-card reveal" data-delay="5">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>Tietokannat & pilvi</h3>
+          <p>
+            Tietomallit, SQL, synkronointi ja pilvipalvelut – data tallessa ja
+            käytettävissä luotettavasti.
+          </p>
+          <span class="tag">Infrastruktuuri</span>
+        </div>
+
+        <div class="solution-card reveal" data-delay="6">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/></svg>
+          </div>
+          <h3>Älylaitteet & IoT</h3>
+          <p>
+            Raspberry Pi, anturit, näytöt ja paikan päällä toimivat laitteet –
+            yhdistettynä verkkoon ja työkaluun.
+          </p>
+          <span class="tag">IoT</span>
+        </div>
+      </div>
+
+      <div class="tech-tags reveal" aria-label="Teknologiat">
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">SQL</span>
+        <span class="tech-tag">C#</span>
+        <span class="tech-tag">PHP</span>
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">Java</span>
+        <span class="tech-tag">TypeScript</span>
+        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">REST API</span>
+        <span class="tech-tag">Git</span>
+        <span class="tech-tag">Raspberry Pi</span>
       </div>
     </div>
   </section>
@@ -1382,7 +1524,7 @@
         </div>
         <div class="process-step reveal" data-delay="6">
           <h3>Käyttöönotto</h3>
-          <p>Ilmainen asennus paikan päällä. Laitteet (Pi, ESP, palvelin…) laskutetaan erikseen ostohinnalla.</p>
+          <p>Ilmainen asennus paikan päällä. Laitteet (Pi, palvelin, näytöt…) laskutetaan erikseen ostohinnalla.</p>
         </div>
         <div class="process-step reveal">
           <h3>Ylläpito</h3>
@@ -1419,7 +1561,7 @@
           <div class="price">Ostohinta</div>
           <span class="price-unit">läpinäkyvä erittely</span>
           <div class="divider"></div>
-          <p>Raspberry Pi, ESP, palvelimet, näytöt ja muut hankinnat laskutetaan suoraan sinulle.</p>
+          <p>Raspberry Pi, palvelimet, näytöt ja muut hankinnat laskutetaan suoraan sinulle.</p>
         </div>
 
         <div class="price-card reveal" data-delay="3">
@@ -1538,12 +1680,12 @@
 
           <div class="field">
             <label for="subject">Aihe (vapaaehtoinen)</label>
-            <input type="text" name="subject" id="subject" placeholder="Esim. kävijälaskenta ravintolaan" />
+            <input type="text" name="subject" id="subject" placeholder="Esim. loyalty-app tai varastotyökalu" />
           </div>
 
           <div class="field">
             <label for="message">Mitä pitäisi ratkaista?</label>
-            <textarea name="message" id="message" rows="6" placeholder="Ravintolassa haluaisin nähdä kävijämäärät… / Tarvitsen inventaarion…" required></textarea>
+            <textarea name="message" id="message" rows="6" placeholder="Kuvaile ongelma: esim. logistiikan seuranta, verkkosivu, peli, analytiikka…" required></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary">

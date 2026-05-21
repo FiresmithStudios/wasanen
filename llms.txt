@@ -1,8 +1,8 @@
 # Wäsänen
 
-> Digitaaliset ratkaisut Nurmijärveltä. Ongelma jaetaan pieniin osiin ja rakennetaan räätälöity työkalu – verkkosivuista IoT:hen ja analytiikkaan.
+> Digitaaliset ratkaisut Nurmijärveltä. Ongelma jaetaan pieniin osiin ja rakennetaan räätälöity työkalu – ohjelmoinnista suunnitteluun ja IoT:hen.
 
-Wäsänen auttaa yrityksiä ja yksityisiä asiakkaita, kun data puuttuu, prosessit ovat kökköjä tai järjestelmät eivät toimi yhdessä. Ratkaisut voivat olla esim. ravintolan kävijädata, inventaario, kellotus, Raspberry Pi / ESP -laitteet, verkkosivut, hallintapaneelit tai pilvipohjaiset yhteistyöjärjestelmät – ja käytännössä mitä tahansa vastaavaa.
+Wäsänen auttaa yrityksiä ja yksityisiä asiakkaita, kun data puuttuu, prosessit ovat kökköjä tai järjestelmät eivät toimi yhdessä. Palvelualueita mm. ohjelmointi, UX- ja graafinen suunnittelu, verkkosivut ja sovellukset, analytiikka, varasto ja logistiikka, tuotanto, loyalty-sovellukset, pelit, kommunikaatio, tietokannat, pilvi ja IoT (Raspberry Pi). Teknologioita mm. HTML, CSS, JavaScript, Python, SQL, C#, PHP, React, Java, TypeScript, Node.js.
 
 ## Yhteystiedot
 
@@ -25,7 +25,7 @@ Wäsänen auttaa yrityksiä ja yksityisiä asiakkaita, kun data puuttuu, prosess
 ## Hinnoittelu
 
 - Suunnittelu, demot ja tarjous: 0 €
-- Laitteistot (Pi, ESP, palvelin, näytöt…): ostohinta, läpinäkyvä erittely
+- Laitteistot (Pi, palvelin, näytöt…): ostohinta, läpinäkyvä erittely
 - Asennus: ilmainen työ; matkakulut erikseen
 - Kuukausimaksu: kiinteä, arvio tarjouksessa, edullinen
 
@@ -35,12 +35,12 @@ Wäsänen auttaa yrityksiä ja yksityisiä asiakkaita, kun data puuttuu, prosess
 
 ## Avainsanat
 
-digitaaliset ratkaisut, verkkosivut, analytiikka, IoT, työkalut, pilvi, inventaario, Nurmijärvi, Wäsänen, Raspberry Pi, automaatio
+digitaaliset ratkaisut, ohjelmointi, verkkosivut, React, Python, JavaScript, SQL, analytiikka, IoT, logistiikka, varasto, loyalty, pelit, suunnittelu, Nurmijärvi, Wäsänen
 
 ## Sivun osiot
 
 - #about – mitä teen
-- #solutions – esimerkkiratkaisut
+- #solutions – esimerkkiratkaisut ja teknologiat
 - #process – 7 vaiheen prosessi
 - #pricing – hinnoitteluperiaate
 - #laser – linkki puu/laser-palveluun
