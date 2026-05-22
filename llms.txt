@@ -1,47 +1,84 @@
 # Wäsänen
 
-> Digitaaliset ratkaisut Nurmijärveltä. Ongelma jaetaan pieniin osiin ja rakennetaan räätälöity työkalu – ohjelmoinnista suunnitteluun ja IoT:hen.
+> Wäsänen on Uusimaalla toimiva pieni digi-/teknologiastudio, joka ratkaisee
+> asiakkaan ongelman jakamalla sen pieniin osiin ja rakentamalla räätälöidyn
+> digitaalisen työkalun. Sivutoimena myös puutyöt ja laserkaiverrus.
+> Asiakas saa kartoituksen, kaksi demoa, esityksen ja tarjouksen aina maksutta;
+> käyttöönotto on ilmainen ja vain laitteet sekä kiinteä, edullinen kuukausimaksu
+> laskutetaan. Kielet: suomi, englanti, ruotsi.
 
-Wäsänen auttaa yrityksiä ja yksityisiä asiakkaita, kun data puuttuu, prosessit ovat kökköjä tai järjestelmät eivät toimi yhdessä. Palvelualueita mm. ohjelmointi, UX- ja graafinen suunnittelu, verkkosivut ja sovellukset, analytiikka, varasto ja logistiikka, tuotanto, loyalty-sovellukset, pelit, kommunikaatio, tietokannat, pilvi ja IoT (Raspberry Pi). Teknologioita mm. HTML, CSS, JavaScript, Python, SQL, C#, PHP, React, Java, TypeScript, Node.js.
+## Tiedot
 
-## Yhteystiedot
-
-- Sivusto: https://wasanen.store
+- Nimi: Wäsänen
+- Sijainti: Nurmijärvi, Uusimaa, Suomi
+- Toiminta-alue: koko Suomi (etänä) ja Uusimaa (paikan päällä)
 - Sähköposti: contact@wasanen.fi
 - Instagram: https://instagram.com/wasanen.store (@wasanen.store)
-- Sijainti: Nurmijärvi, Uusimaa, Suomi
 - Vastausaika: yleensä saman päivän aikana
+- Slogan: "Anna mä wäsään."
+- Kielet: suomi (fi), englanti (en), ruotsi (sv)
 
-## Prosessi
+## Sivut
 
-1. Yhteydenotto lomakkeella tai sähköpostilla
-2. Kartoitus (puhelu, video, viestit tai paikan päällä)
-3. Ensimmäinen ilmainen demo + briiffi
-4. Toinen demo; esitys kasvotusten tai videolla
-5. Tarjous sähköpostiin (tähän asti ilmaista)
-6. Käyttöönotto: ilmainen asennus; laitteet laskutetaan ostohinnalla
-7. Kiinteä kuukausimaksu työkalusta (arvioidaan tarjouksessa)
+- [Etusivu – digitaaliset ratkaisut](https://wasanen.store/): pääpalvelu, prosessi ja yhteydenotto.
+- [Laser & puutyöt](https://wasanen.store/laser/): sivutoiminen puupaja, laserkaiverrus ja yksilölliset lahjat.
+- [llms-full.txt](https://wasanen.store/llms-full.txt): laajempi, kone- ja LLM-luettava kuvaus palveluista, prosessista ja hinnoittelusta.
+- [Sitemap](https://wasanen.store/sitemap.xml): koko sivuston URL-luettelo.
+- [robots.txt](https://wasanen.store/robots.txt): indeksointisäännöt (myös AI-indeksoijille sallittu).
+
+## Palvelut (digitaaliset)
+
+- Ohjelmointi ja kehitys: räätälöidyt järjestelmät, API:t, automaatio
+- Verkkosivut ja sovellukset: julkiset sivut, hallintapaneelit, sisäiset työkalut
+- Suunnittelu ja UX: käyttöliittymät, työnkulut ja rakenne ennen koodausta
+- Graafinen suunnittelu: visuaalinen ilme, layoutit, brändimateriaalit
+- Data ja analytiikka: mittaus, raportit, näkymät, esim. ravintoladata
+- Varasto ja logistiikka: inventaario, varastonhallinta, toimitusketjut
+- Tuotanto ja prosessit: tuotantolinjojen seuranta ja työvaiheet
+- Loyalty ja asiakkuus: kanta-asiakasohjelmat, leimat, sovellukset
+- Pelit ja vuorovaikutus: pelit, simulaatiot, interaktiiviset työkalut
+- Kommunikaatio: ilmoitukset, viestit, integraatiot, kanavat
+- Tietokannat, pilvi ja IoT: SQL, pilvipalvelut, Raspberry Pi, ESP, anturit, näytöt
+
+## Teknologiat
+
+HTML, CSS, JavaScript, TypeScript, Python, SQL, C#, PHP, Java, React, Node.js,
+REST API, Git, Raspberry Pi, ESP32, pilvipalvelut.
+
+## Prosessi (7 vaihetta)
+
+1. Yhteydenotto lomakkeella tai sähköpostilla.
+2. Kartoitus: puhelu, videopalaveri, viestit tai paikan päällä.
+3. Ensimmäinen ilmainen demo + briiffi.
+4. Viimeinen demo: esitys kasvotusten tai videolla.
+5. Tarjous sähköpostiin – tähän asti kaikki on maksutonta.
+6. Käyttöönotto: ilmainen asennus paikan päällä; laitteet ostohinnalla.
+7. Ylläpito: kiinteä, edullinen kuukausimaksu työkalun käytöstä.
 
 ## Hinnoittelu
 
-- Suunnittelu, demot ja tarjous: 0 €
-- Laitteistot (Pi, palvelin, näytöt…): ostohinta, läpinäkyvä erittely
-- Asennus: ilmainen työ; matkakulut erikseen
-- Kuukausimaksu: kiinteä, arvio tarjouksessa, edullinen
+- Suunnittelu, demot, esitys ja tarjous: 0 €
+- Laitteistot (Raspberry Pi, palvelimet, näytöt, anturit jne.): läpinäkyvä ostohinta
+- Asennus: ilmainen työ; matkakulut erikseen Uudenmaan ulkopuolella
+- Kuukausimaksu: kiinteä, arvio tarjouksessa, edullinen koska tämä on myös intohimo
+- Valuutta: EUR
 
-## Sivutoimi: laser & puutyöt
+## Sivutoimi
 
-- https://wasanen.store/laser/ – puutyöt, laserkaiverrus, lahjat
+- [Laser & puutyöt](https://wasanen.store/laser/): laserkaiverrus, leikkuulaudat, yksilölliset lahjat. Sama Wäsänen ja samat yhteystiedot.
 
 ## Avainsanat
 
-digitaaliset ratkaisut, ohjelmointi, verkkosivut, React, Python, JavaScript, SQL, analytiikka, IoT, logistiikka, varasto, loyalty, pelit, suunnittelu, Nurmijärvi, Wäsänen
+digitaaliset ratkaisut, ohjelmointi, web-kehitys, verkkosivut, sovelluskehitys,
+React, Python, JavaScript, TypeScript, SQL, analytiikka, data, IoT, Raspberry Pi,
+logistiikka, varasto, inventaario, loyalty, kanta-asiakas, pelit, UX, graafinen
+suunnittelu, Nurmijärvi, Uusimaa, Suomi, Wäsänen.
 
-## Sivun osiot
+## Sivun osiot (ankkurit)
 
-- #about – mitä teen
-- #solutions – esimerkkiratkaisut ja teknologiat
-- #process – 7 vaiheen prosessi
-- #pricing – hinnoitteluperiaate
-- #laser – linkki puu/laser-palveluun
-- #contact – yhteydenotto
+- [#about](https://wasanen.store/#about) – mitä Wäsänen tekee
+- [#solutions](https://wasanen.store/#solutions) – esimerkkiratkaisut ja teknologiat
+- [#process](https://wasanen.store/#process) – 7 vaiheen prosessi
+- [#pricing](https://wasanen.store/#pricing) – hinnoitteluperiaate
+- [#laser](https://wasanen.store/#laser) – linkki puu-/laserpalveluun
+- [#contact](https://wasanen.store/#contact) – yhteydenottolomake ja yhteystiedot

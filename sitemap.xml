@@ -1,15 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
   <url>
     <loc>https://wasanen.store/</loc>
-    <lastmod>2026-05-21</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fi"        href="https://wasanen.store/" />
+    <xhtml:link rel="alternate" hreflang="fi-FI"     href="https://wasanen.store/" />
+    <xhtml:link rel="alternate" hreflang="en"        href="https://wasanen.store/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="sv"        href="https://wasanen.store/?lang=sv" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wasanen.store/" />
+    <image:image>
+      <image:loc>https://wasanen.store/logo.png</image:loc>
+      <image:title>Wäsänen – Digitaaliset ratkaisut</image:title>
+      <image:caption>Wäsänen logo</image:caption>
+    </image:image>
   </url>
+
   <url>
     <loc>https://wasanen.store/laser/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-05-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fi"        href="https://wasanen.store/laser/" />
+    <xhtml:link rel="alternate" hreflang="fi-FI"     href="https://wasanen.store/laser/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wasanen.store/laser/" />
+    <image:image>
+      <image:loc>https://wasanen.store/laser/banner.png</image:loc>
+      <image:title>Wäsänen – Puutyöt ja laserkaiverrus</image:title>
+      <image:caption>Wäsäsen puutyö- ja laser-palvelu</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://wasanen.store/logo.png</image:loc>
+      <image:title>Wäsänen</image:title>
+    </image:image>
   </url>
+
+  <url>
+    <loc>https://wasanen.store/llms.txt</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://wasanen.store/llms-full.txt</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
 </urlset>
